@@ -25,12 +25,12 @@ export interface TitleConfig {
 }
 
 export default function Home() {
-  const [image, setImage] = useState<ImageConfig>({
+  const image: ImageConfig = {
     url: "./src/assets/mage.jpg",
     position: { x: 820, y: 400 },
     startTime: 6,
     endTime: 10,
-  });
+  };
 
   const [titles, setTitles] = useState<TitleConfig[]>([
     {
